@@ -1,42 +1,35 @@
-# 📊 transactional-demand-models
+# Transactional Demand Models
 
-Este repositorio contiene el código y la documentación relacionados con el artículo:
+Repositorio oficial para el código y documentación del artículo de investigación:
 
-> **Construcción de modelos predictivos en el sector ferretero a partir de datos transaccionales: efectos de la pandemia**  
-> Isaias Cáceres, Maximiliano Amarilla, Luis Richer  
-> Universidad Paraguayo Alemana, SRH University
+**Título:** Construcción de modelos predictivos en el sector ferretero a partir de datos transaccionales: efectos de la pandemia.
+**Autores:** Isaias Cáceres, Maximiliano Amarilla, Luis Richer.
+**Afiliación:** Universidad Paraguayo Alemana, SRH University.
 
----
+## Resumen del Proyecto
 
-## 📦 Descripción
-El proyecto desarrolla y compara modelos de predicción de demanda utilizando datos históricos transaccionales de una empresa distribuidora del sector ferretero.  
-Se analizaron distintos enfoques de regresión (lineal, polinómica de segundo grado y K-Nearest Neighbors) y se evaluó el impacto de incluir/excluir el periodo pandémico y de filtrar valores atípicos mediante el rango intercuartílico (IQR).
+Este proyecto desarrolla y evalúa modelos de predicción de demanda utilizando datos históricos transaccionales de una empresa distribuidora del sector ferretero. El estudio se centra en la comparación de distintos enfoques de regresión para optimizar la planificación de inventario.
 
----
+El análisis abarca:
+- **Modelos:** Regresión Lineal, Polinómica (2º grado) y K-Nearest Neighbors (KNN).
+- **Variables:** Evaluación del impacto de la inclusión/exclusión del periodo pandémico.
+- **Preprocesamiento:** Filtrado de valores atípicos mediante Rango Intercuartílico (IQR).
 
-## 🔒 Acceso a los datos
-Por razones de confidencialidad, **los datos utilizados no se publican** en este repositorio.  
-Investigadores o revisores interesados pueden solicitar acceso, sujeto a la autorización de la empresa.
+## Tecnologías Utilizadas
 
-📩 **Contacto:**  
-Isaias Cáceres – ignacio.caceres@upa.edu.py
+El proyecto fue desarrollado utilizando Python 3.x y las siguientes librerías principales:
 
----
+- **Procesamiento de datos:** Pandas, NumPy.
+- **Modelado y Machine Learning:** Scikit-learn.
+- **Visualización:** Matplotlib, Seaborn.
+- **Entorno:** Jupyter Notebook.
 
-## 📂 Estructura del repositorio
-- `Sales_Forecasting.ipynb`: Notebook principal con el análisis y los modelos.
-- `Dataset/`: Carpeta para ubicar los archivos de datos.  
-- `Graficos/`: Carpeta para guardar resultados gráficos.
-- `README.md`: Este archivo.
-- `.gitignore`, `LICENSE`: Archivos de configuración y licencia.
+## Estructura del Repositorio
 
----
-
-## ⚙️ Reproducibilidad
-Para reproducir los experimentos:
-1. Solicitar los datos y colocarlos en la carpeta `Dataset/` siguiendo las instrucciones en su README.
-2. Ejecutar el notebook `Sales_Forecasting.ipynb`.
-
----
-## 📜 Licencia
-Este proyecto se distribuye bajo la licencia MIT.
+```text
+├── Dataset/               # Directorio para archivos de datos (ver nota de confidencialidad)
+├── Graficos/              # Resultados visuales generados por los modelos
+├── Sales_Forecasting.ipynb # Notebook principal con pipeline de ETL y modelado
+├── .gitignore             # Archivos ignorados por git
+├── LICENSE                # Licencia MIT
+└── README.md              # Documentación del proyecto
